@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8' />
+	<title>snotes</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" type="image/png" href="icon.png" />
+	
+	<script src="js/jquery-1.7.min.js"></script>
+	<script src="js/modernizr.custom.34982.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+	
+	<script src="js/menu.js"></script>
+	<script src="js/textbox.js"></script>
+	<script src="js/sketcher.js"></script>
+	
+
+</head>
+<body>
+
+	<div id="header">
+		<div id="header_top">
+			<div class="container">
+				<div id="logo_btn">
+					<img id="logo" src="snotes.png">
+				</div>
+				
+				<div class="divider"></div>
+				
+				<div id="draw_btn">
+					<div id="draw_shape">
+						<img id="text_icon" src="text_icon.png">
+						<div id="slider">
+							<div id="toggle_dot"></div>
+						</div>
+						<img id="pen_icon" src="pen_icon.png">
+					</div>
+					
+					<div id="draw_tooltip">
+						<div class="arrowup" id="draw_tooltip_arrow"></div>
+						Toggle Mode <br>( hold "ALT" )
+					</div>
+				</div>
+				
+				<div class="divider"></div>
+				
+				<div class="menu_btn" id="tbox_btn">
+					<img id="textbox_icon" src="textbox_icon.png">
+					<div class="label">TEXTBOX</div>
+					
+					<div id="tbox_tooltip">
+						<div class="arrowup" id="tbox_tooltip_arrow"></div>
+						Floating Textbox <br>( "Dbl-Click Paper" )
+					</div>
+					
+				</div>
+				
+				<div class="divider"></div>
+				
+				<div class="menu_btn" id="color_btn">
+					<div id="color_position">
+						<div class="color_icon" id="color_obj"></div>
+					</div>
+						<div class="label" id="col_label">RED</div>
+					
+					<div id="color_menu">
+						<div class="color_select" id="c0">
+							<div class="color_icon" id="color0"></div>
+						</div>
+						<div class="color_select" id="c1">
+							<div class="color_icon" id="color1"></div>
+						</div>
+						<div class="color_select" id="c2">
+							<div class="color_icon" id="color2"></div>
+						</div>
+						<div class="color_select" id="c3">
+							<div class="color_icon" id="color3"></div>
+						</div>
+						<div class="color_select" id="c4">
+							<div class="color_icon" id="color4"></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="divider"></div>
+						
+				<div class="menu_btn" id="size_btn">
+					<div id="size_obj"></div>
+					<div class="label" id="size_label">6 PX</div>
+					
+					<div id="size_menu">
+						<div class="size_select" id="s1">
+							<div id="size1"></div>
+						</div>
+						<div class="size_select" id="s2">
+							<div id="size2"></div>
+						</div>
+						<div class="size_select" id="s3">
+							<div id="size3"></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="divider"></div>
+				
+				<div id="login_btn">
+					<div id="login_icon">
+						<div class="label">DEMO</div>
+					</div>
+				</div>
+				
+				</div>
+			</div>
+		</div>
+	</div>	<!--header-->
+	
+	<!--page-->
+	<div id="page_menu">
+		<div class="container">
+			<div id="pages">
+				<div class="page_num active_page id="01"">1</div>
+				<div class="page_num non_page" id="02">2</div>
+
+			</div>
+			<div class="page_num" id="add_page">+</div>
+		</div>
+	</div>		
+			
+			
+	<!--paper-->
+	<div id="edit_content">
+		<div class="container">
+		
+			<div id="paper">
+				<textarea id="text"></textarea>
+				<canvas height="1000px" width="800px" id="draw"></canvas>
+			</div>
+			
+		</div>	
+	</div>
+
+</body>
+
+</body>
+</html>
